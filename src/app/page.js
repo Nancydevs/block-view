@@ -9,7 +9,7 @@ import blueChain from "./assets/blueChain.png";
 import greenChain from "./assets/greenChain.png";
 import yellowChain from "./assets/yelloChain.png";
 import BlockchainAnimation from "./components/BlockchainAnimation";
-import Loader from "./components/loader";
+import Loader from "./components/Loader";
 
 const natsWsUrl =
   "wss://europe-west3-gcp-dl-testnet-brokernode-frankfurt01.synternet.com";
