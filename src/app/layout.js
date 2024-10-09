@@ -1,6 +1,12 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { Inter } from 'next/font/google'
 
+const instrumentSans = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-instrument-sans',
+})
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
