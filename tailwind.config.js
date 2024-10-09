@@ -19,7 +19,13 @@ module.exports = {
       },
       animation: {
         fadeInGrow: 'fadeInGrow 1s ease-out',
-      }
+      },
+      fontFamily:{
+        sans: ['var(--font-instrument-sans)'],
+      },
+      inset: {
+        '13': '3.25rem',
+      },
     },
   },
   plugins: [],
