@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const ChainLink = () => (
   <svg width="24" height="50" viewBox="0 0 24 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 0V96" stroke="#4A5568" strokeWidth="2" strokeDasharray="4 4"/>
-    <circle cx="12" cy="20" r="4" fill="#4A5568"/>
+    <path d="M12 0V96" stroke="#8AA5D3A2" strokeWidth="2" strokeDasharray="4 4"/>
+    <circle cx="12" cy="20" r="4" fill="#8AA5D3A2"/>
 
   </svg>
 );
@@ -31,10 +31,10 @@ const BlockchainAnimation = ({ blocks, blockchainImage, chain }) => {
             className={`absolute left-0 w-full h-24 transition-all ${chain=="sol"?"duration-150":"duration-1000"} ease-in-out flex items-center ${
               animatingNewBlock ? 'translate-y-24' : ''
             }`}
-            style={{ top: `${index * 120  - 33}px` }}
+            style={{ top: `${index * 120  - 21}px` }}
           >
             <div className="flex items-center space-x-4">
-              <div className="relative w-24 h-24">
+              <div className="relative w-32 h-32">
                 <Image
                   src={blockchainImage}
                   alt={`Block ${block.number}`}
@@ -59,7 +59,7 @@ const BlockchainAnimation = ({ blocks, blockchainImage, chain }) => {
           </div>
           {index < blocks.length - 1 && (
             <div 
-              className={`absolute left-9 transition-all ${chain==="sol"?"duration-150":"duration-1000"} z-50 ease-in-out ${
+              className={`absolute left-13 transition-all ${chain==="sol"?"duration-150":"duration-1000"} z-50 ease-in-out ${
                 animatingNewBlock ? 'translate-y-24' : ''
               }`}
               style={{ top: `${index * 120 +60}px` }}
