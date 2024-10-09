@@ -173,34 +173,32 @@ export default function Home() {
   };
 
   return (
-    <div className='fixed inset-0 w-full h-full bg-gradient-to-br from-pink-100 via-blue-100 to-green-100 animate-gradient-x'>
-      <style jsx>{`
-        @keyframes gradient-x {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
-        .animate-gradient-x {
-          background-size: 400% 400%;
-          animation: gradient-x 15s ease infinite;
-        }
-      `}</style>
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-950 to-black relative overflow-hidden">
+      {/* Hexagonal pattern overlay */}
+      {/* <div className="absolute inset-0 opacity-10">
+        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <defs>
+            <pattern id="hexagons" width="50" height="43.4" patternUnits="userSpaceOnUse" patternTransform="scale(0.5)">
+              <path d="M25 0 L50 14.4 L50 43.4 L25 57.7 L0 43.4 L0 14.4 Z" fill="none" stroke="currentColor" strokeWidth="1"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hexagons)" />
+        </svg>
+      </div> */}
+     
 
       <main
-        className='flex min-h-screen flex-col items-center justify-start   text-black'
+        className='flex min-h-screen flex-col items-center justify-start   text-gray-200'
         style={{}}>
-        <h1 className='text-4xl font-bold mb-8 mt-10 leading-relaxed'>
-          BlockView 👁️
+        <h1 className='text-5xl font-sans font-extrabold  mt-10 leading-relaxed text-white'>
+          BlockView
         </h1>
+        <p className='text-md font-mono  text-gray-300 text-center'>
+          Bird Eye view of blocks of chains
+        </p>
         <div>
-          <p className='text-lg font-medium text-gray-800 mb-10 text-center'>
-            Welcome to BlockView! <br></br> Here you can see block formation of
+          <p className=' font-medium text-gray-200 mt-8 mb-10 text-center'>
+            Here you can see block formation of
             Solana, Ethereum and Base in real time using
             <a
               href='https://synternet.com'
